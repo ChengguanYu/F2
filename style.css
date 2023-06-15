@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+}
+@font-face {
+    font-family:MyFont;
+    src: url("./test.ttf");
+}
+
+body,
+html {
+    background: #f7f7f7;
+}
+
+.wrapper {
+    width: 600px;
+    height: auto;
+    background: #fff;
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2)
+}
+.wrapper .search {
+    width: 100%;
+    height: 40px;
+}
+
+.wrapper .search .inp {
+    width: 280px;
+    height: 40px;
+    border: 1px solid #ec9129;
+    line-height: 40px;
+    padding: 0 15px;
+    border-radius: 5px;
+    float: left;
+}
+
+.wrapper .search .btn-list {
+    float: right;
+    height: 40px;
+}
+
+.wrapper .search .btn-list li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 55px;
+    border: 1px solid #0bc7b7;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #0bc7b7;
+    cursor: pointer;
+}
+
+
+
+.wrapper .search .btn-list .active {
+    background: #0bc7b7;
+    color: #fff;
+}
+
+.wrapper .user {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.wrapper .user li {
+    font-family: MyFont;
+    background: #f8f8f8;
+    border-radius: 5px;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    margin-bottom: 15px;
+}
+
+.wrapper .user li:hover {
+    background: #dff3eb;
+}
+
+
+
+.wrapper .user li .head-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.wrapper .user li .head-img img {
+    width: 120%;
+}
+
+.wrapper .user li .tit {
+    float: right;
+    height: 100%;
+    width: 85%;
+    margin-top: 5px;
+}
+.wrapper .user li .tit .name {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+
+.wrapper .user li .tit .motto {
+    font-size: 14px;
+    color: #5c5c5c;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.wrapper .prompt {
+    color: #d4d4d4;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    display: none;
+}
+
+.wrapper .add {
+    border: 1px solid #0bc7b7;
+
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #0bc7b7;
+    transition:0.2s;
+}
+.wrapper .add span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.wrapper .add span:after {
+    content: '+';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.1s;
+}
+
+.wrapper .add:hover span {
+    padding-right: 15px;
+  }
+
+.wrapper .add:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.wrapper .add:hover{
+    color: #ffffff;
+    background-color: #0bc7b7;
+}
