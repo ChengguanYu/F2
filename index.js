@@ -131,7 +131,7 @@ inputLine.addEventListener('input',e=>
 function showList(list)
 {
     user.innerHTML='';
-    for(index =0 ; index < list.length ; index++)
+    for(index = 0 ; index < list.length ; index++ )
     {
         const ele = list[index];
         var liEle = document.createElement('li');
@@ -140,6 +140,11 @@ function showList(list)
         var titDiv = document.createElement('div');
         var hEle = document.createElement('h3');
         var pEle = document.createElement('p');
+
+        liEle.addEventListener('dblclick',e=>
+        {
+            console.log(e.target,'触发');
+        })
 
         liEle.className = 'item';
         imgDiv.className = 'head-img';
