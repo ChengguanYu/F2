@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>添加联系人</title>
+
+  <link rel="stylesheet" href="style.css"> 
+
+  <link rel="stylesheet" href="addPersonStyle.css">
+
+</head>
+
+ 
+
+<body>
+
+  <div class="wrapper">
+
+    <h2 class="title">新增联系人</h2>
+
+    <form>
+
+      <div>
+
+        姓名:&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input class="inp" type="text" name="name" id="name" placeholder="请输入姓名">
+
+      </div>
+
+      <div>
+
+        座右铭:&nbsp;
+
+        <input class="inp" type="text" name="motto" id="motto" placeholder="请输入座右铭">
+
+      </div>
+
+      <div>
+
+        性别:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label class="radio">
+
+          <input type="radio" name="sex" value="boys" checked="checked"> 男
+
+        </label>
+
+        <label  class="radio">
+
+          <input type="radio" name="sex" value="girls"> 女
+
+        </label>
+
+      </div>
+
+      <div>
+
+        选择头像:
+
+        <select class="item" name="img">
+
+          <option value="./img/1.png">头像 1</option>
+
+          <option value="./img/2.png">头像 2</option>
+
+          <option value="./img/3.png">头像 3</option>
+
+          <option value="./img/4.png">头像 4</option>
+
+          <option value="./img/5.png">头像 5</option>
+
+          <option value="./img/6.png">头像 6</option>
+
+          <option value="./img/7.png">头像 7</option>
+
+          <option value="./img/8.png">头像 8</option>
+
+          <option value="./img/9.png">头像 9</option>
+
+          <option value="./img/10.png">头像 10</option>
+
+        </select>
+
+      </div>
+
+      <input class="btn" type="submit" value="确认添加">
+
+      <h3 class="btn cancel">取消</h3>
+
+    </form>
+
+    <script src="addPerson.js"></script>
+
+  </div>
+
+</body>
+
+ 
+
+</html>
+

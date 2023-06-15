@@ -90,9 +90,10 @@ reloadBtn.addEventListener('click',function(e)
 
 addBtn.addEventListener('click',ele=>
 {
-    var person= new Person('丁真','./img/3.jpg','哥们名叫丁真','M');
-    persons.push(person);
-    showList(persons);
+    // var person= new Person('丁真','./img/3.jpg','哥们名叫丁真','M');
+    // persons.push(person);
+    // showList(persons);
+    location.href='./addPerson.html';
 });
 
 btnList.addEventListener('click',e=>
@@ -128,6 +129,20 @@ inputLine.addEventListener('input',e=>
     showList(result);
 })
 
+user.addEventListener('dblclick',e=>
+{
+    if(e.target.matches('li'))
+    {
+        user.removeChild(e.target);
+    }else if(e.target.matches('div'))
+    {
+        user.removeChild(e.target.parentNode);
+    }else if(e.target.matches('img') || e.target.matches('h3') || e.target.matches('p'))
+    {
+        user.removeChild(e.target.parentNode.parentNode);
+    }
+});
+
 function showList(list)
 {
     user.innerHTML='';
@@ -140,11 +155,6 @@ function showList(list)
         var titDiv = document.createElement('div');
         var hEle = document.createElement('h3');
         var pEle = document.createElement('p');
-
-        liEle.addEventListener('dblclick',e=>
-        {
-            console.log(e.target,'触发');
-        })
 
         liEle.className = 'item';
         imgDiv.className = 'head-img';
